@@ -1,0 +1,193 @@
+:root {
+  --linear_BG: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  --bitcoin_orange: #F7931A;
+  --soft_orange: #FFE9D5;
+  --secondary_blue: #1A9AF7;
+  --soft_blue: #E7F5FF;
+  --warm_black: #201E1C;
+  --black: #282623;
+  --grey: #BABABA;
+  --off_white: #FAF8F7;
+  --just_white: #FFF;
+  --grey_text: #757575;
+  --fonts_inter_sm: 300;
+  --fonts_sm: 400;
+  --fonts_md: 500;
+  --fonts_lg: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* esto es para hacer uso del rem */
+  font-family: "DM Sans", sans-serif;
+}
+
+
+body {
+  display: grid;
+  margin: 0 auto;
+}
+
+
+header {
+  font-weight: var(--fonts_sm);
+  font-style: normal;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: var(--linear_BG);
+}
+
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+  align-self: center;
+}
+
+.header--text-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
+
+.header--text-container h1 {
+  color: var(--just_white);
+  font-size: 2.4rem;
+  font-weight: var(--fonts_lg);
+  /* Distancia entre lineas: 26px*/
+  line-height: 2.6rem;
+}
+
+.header--text-container p {
+  margin-top: 25px;
+  color: var(--soft_orange);
+  font-weight: var(--fonts_md);
+  /* 18px */
+  line-height: 1.8rem;
+  /* 14px */
+  font-size: 1.4rem;
+}
+
+.header--text-container .header--button {
+  position: absolute;
+  left: calc(50% - 118px);
+  top: 270px;
+  display: block;
+  margin-top: 40px;
+  padding: 15px;
+  width: 229px;
+  height: 48px;
+  background-color: var(--off_white);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  font-size: 1.4rem;
+  font-weight: var(--fonts_lg);
+  color: var(--black);
+  text-decoration: none;
+}
+
+.header--button span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url('../assets/icons/Vector_down.svg');
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off_white);
+}
+
+.section-exchange_container {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.section-exchange_textContent {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-exchange_imgBackground {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background: url(../assets/img/Bitcoin.svg) center/cover no-repeat;
+}
+
+.section-exchange_container h2 {
+  line-height: 2.6rem;
+  font-size: 2.4rem;
+  font-weight: var(--fonts_lg);
+  margin-bottom: 20px;
+}
+
+.section-exchange_container p {
+  line-height: 1.8rem;
+  color: var(--grey_text);
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+
+.section-exchange_table {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 100%;
+  font-weight: var(--fonts_md);
+  color: #B5B0AC;
+  display: grid;
+  grid-template-columns: repeat(2, 95px);
+  grid-template-rows: repeat(4, 39px);
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: var(--just_white);
+  gap: 10px;
+}
+
+.tablecell {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-exchange_price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-exchange_price img {
+  width: 12px;
+  height: 12px;
+}
+
+.section-exchange_price p {
+  padding: 0;
+  margin: 0;
+  padding: 15px;
+}
