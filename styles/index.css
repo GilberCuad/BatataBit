@@ -85,7 +85,8 @@ header img {
 
 .header--text-container .header--button {
   position: absolute;
-  left: calc(50% - 118px);
+  left: 50%;
+  transform: translateX(-50%);
   top: 270px;
   display: block;
   margin-top: 40px;
@@ -169,7 +170,8 @@ main {
 }
 
 .tablecell {
-  border-radius: 8px;
+  border-top: 8px;
+  border-right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,4 +192,85 @@ main {
   padding: 0;
   margin: 0;
   padding: 15px;
+}
+
+.section-exchange_tableMoney h2 {
+  color: var(--bitcoin_orange);
+  font-weight: var(--fonts_lg);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  margin-right: 78px;
+}
+
+.section-exchange_information_table {
+  width: 173px;
+  height: 31px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: var(--soft_orange);
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.section-exchange_information_table span {
+  font-weight: var(--fonts_lg);
+}
+
+.section-create_container {
+  margin: 0 auto;
+  color: var(--just_white);
+  background-color: var(--warm_black);
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  padding: 28px;
+}
+
+.section-create_instruction {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.section-create_instruction p {
+  color: var(--grey_text);
+  font-weight: var(--fonts_md);
+  font-size: 1.4rem;
+}
+
+.section-create_instruction h2 {
+
+  margin-bottom: 1rem;
+  font-weight: var(--fonts_lg);
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.section-create_card {
+  width: 288px;
+  height: 152px;
+  background: var(--black);
+  border-radius: 4px;
+  margin-top: 15px;
+  padding: 17px;
+}
+
+.section-create_card img {
+  height: 20px;
+  width: 20px;
+}
+
+.section-create_card h2 {
+  font-weight: var(--fonts_lg);
+  font-size: 1.8rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.section-create_card p {
+  font-weight: var(--fonts_md);
+  color: var(--grey_text);
+  font-size: 1.4rem;
 }
