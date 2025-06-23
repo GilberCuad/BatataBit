@@ -14,10 +14,22 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="../styles/index.css">
+
+    <script>
+  window.addEventListener('load', () => {
+    const container = document.querySelector('.section-information_target');
+    const cards = container.querySelectorAll('.information_target');
+
+    if (cards.length >= 3) {
+      const middleCard = cards[1];
+      middleCard.scrollIntoView({ behavior: 'instant', inline: 'center', block: 'nearest' });
+    }
+  });
+</script>
+
     <title>Tbryblee</title>
   </head>
   <body>
-
     <header>
       <img src="/assets/img/Group 19.svg" alt="·">
       <div class="header--text-container">
@@ -25,7 +37,7 @@
         <p>Batatabit te ayuda a navegar entre los diferentes precios y
           tendencias.</p>
 
-        <a class="header--button" href="#">Conoce Nuestros planes
+        <a class="header--button" href="#plans">Conoce Nuestros planes
           <span></span></a>
 
       </div>
@@ -41,78 +53,167 @@
           <p>Traemos información en tiempo real de las casas de cambio y las
             monedas más importantes del mundo.</p>
         </div>
+        <div>
+          <section class="section-exchange_tableMoney">
+            <h2>Monedas</h2>
+            <div class="section-exchange_table">
+              <div class="tablecell">Bitcoin</div>
+              <div class="section-exchange_price tablecell">
+                <p>$1.97</p>
+                <img src="/assets/icons/trending-down 1.svg" alt>
+              </div>
 
-        <section class="section-exchange_tableMoney">
-          <h2>Monedas</h2>
-          <div class="section-exchange_table">
-            <div class="tablecell">Bitcoin</div>
-            <div class="section-exchange_price tablecell">
-              <p>$1.97</p>
-              <img src="/assets/icons/trending-down 1.svg" alt>
+              <div class="tablecell">Ethereum</div>
+
+              <div class="section-exchange_price tablecell">
+                <p>$0.23</p>
+                <img src="/assets/icons/trending-up 1.svg" alt>
+              </div>
+
+              <div class="tablecell">Ripple</div>
+
+              <div class="section-exchange_price tablecell">
+                <p>$1.97</p>
+                <img src="/assets/icons/trending-down 1.svg" alt>
+              </div>
+
+              <div class="tablecell">Stellar</div>
+
+              <div class="section-exchange_price tablecell">
+                <p>$1.97</p>
+                <img src="/assets/icons/trending-down 1.svg" alt></div>
             </div>
 
-            <div class="tablecell">Ethereum</div>
+            <div
+              class="section-exchange_information_table"><span>Actualizado:</span>
+              17 Junio 24:21</div>
+          </section>
 
-            <div class="section-exchange_price tablecell">
-              <p>$0.23</p>
-              <img src="/assets/icons/trending-up 1.svg" alt>
-            </div>
+          <section class="section-exchange_commission">
+            <h2>Comisiones</h2>
+            <div class="section-exchange_table">
+              <div class="tablecell">Bitcoin</div>
+              <div class="section-exchange_price tablecell">
+                <p>$1.97</p>
+              </div>
 
-            <div class="tablecell">Ripple</div>
+              <div class="tablecell">Ethereum</div>
 
-            <div class="section-exchange_price tablecell">
-              <p>$1.97</p>
-              <img src="/assets/icons/trending-down 1.svg" alt>
-            </div>
+              <div class="section-exchange_price tablecell">
+                <p>$0.23</p>
+              </div>
 
-            <div class="tablecell">Stellar</div>
+              <div class="tablecell">Ripple</div>
 
-            <div class="section-exchange_price tablecell">
-              <p>$1.97</p>
-              <img src="/assets/icons/trending-down 1.svg" alt></div>
+              <div class="section-exchange_price tablecell">
+                <p>$1.97</p>
+              </div>
+
+              <div class="tablecell">Stellar</div>
+
+              <div class="section-exchange_price tablecell">
+                <p>$1.97</p>
+              </div>
+            </section>
+            <div
+              class="section-exchange_information_commission"><span>Actualizado:</span>
+              17 Junio 24:21</div>
+          </section>
+        </div>
+
+        <section class="section-create_container">
+          <div class="section-create_instruction">
+            <h2>Creamos un producto sin comparación.</h2>
+            <p>Confiable y diseñado para su uso diario.</p>
           </div>
 
-          <div
-            class="section-exchange_information_table"><span>Actualizado:</span>
-            17 Junio 24:21</div>
+          <div class="section-create_card card_one">
+            <img src="/assets/icons/clock 1.svg">
+            <h2>Tiempo real</h2>
+            <p>Nuestro API toma información minuto a minuto sobre las tasas que
+              más determinan el comportamiento.</p>
+          </div>
+          <div class="section-create_card card_two">
+            <img src="/assets/icons/eye.svg">
+            <h2>No hay tasas escondidas</h2>
+            <p>Ni en la compra o al momento de exit, Batabit siempre te muestra
+              el
+              costo real de lo que estás adquiriendo.</p>
+          </div>
+          <div class="section-create_card card_three">
+            <img src="/assets/icons/dollar-sign 1.svg">
+            <h2>Compara monedas</h2>
+            <p>No más rumores, con Babtabit sabrás el valor real de cada moneda
+              en
+              el mercado actual.</p>
+          </div>
+          <div class="section-create_card">
+            <img src="/assets/icons/check-circle 1.svg">
+            <h2>Información confiable</h2>
+            <p>No más rumores, con Babtabit sabrás el valor real de cada moneda
+              en
+              el mercado actual.</p>
+            <span class="section-create_img_div"></span>
+          </div>
         </section>
-      </section>
+        <section class="section-image_container">
+          <p>¡Conócelo hoy!</p>
+          <span class="section-image_batata_logo"></span>
+        </section>
+        <section class="section-information_container" id="plans">
+          <article>
+            <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+            <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+          </article>
+          <div class="section-information_target">
 
-      <section class="section-create_container">
-        <div class="section-create_instruction">
-          <h2>Creamos un producto sin comparación.</h2>
-          <p>Confiable y diseñado para su uso diario.</p>
-        </div>
+            <div class="information_target">
+              <article>
+                <div class="section-information_text">
+                  <h3>Pago Anual</h3>
+                  <p class="section-information_price"><span>$</span>789</p>
+                  <p>*Ahorras $139 comparado al plan mensual.</p>
+                  <button>Escoger este <span></span></button>
+                </div>
+              </article>
+            </div>
 
-        <div class="section-create_card card_one">
-          <img src="/assets/icons/clock 1.svg">
-          <h2>Tiempo real</h2>
-          <p>Nuestro API toma información minuto a minuto sobre las tasas que
-            más determinan el comportamiento.</p>
-        </div>
-        <div class="section-create_card card_two">
-          <img src="/assets/icons/eye.svg">
-          <h2>No hay tasas escondidas</h2>
-          <p>Ni en la compra o al momento de exit, Batabit siempre te muestra el
-            costo real de lo que estás adquiriendo.</p>
-        </div>
-        <div class="section-create_card card_three">
-          <img src="/assets/icons/dollar-sign 1.svg">
-          <h2>Compara monedas</h2>
-          <p>No más rumores, con Babtabit sabrás el valor real de cada moneda en
-            el mercado actual.</p>
-        </div>
-        <div class="section-create_card card_four">
-          <img src="/assets/icons/check-circle 1.svg">
-          <h2>Información confiable</h2>
-          <p>No más rumores, con Babtabit sabrás el valor real de cada moneda en
-            el mercado actual.</p>
-        </div>
-      </section>
-      <section>section3</section>
-      <section>section4</section>
-    </main>
+            <div class="information_target">
+              <div class="section-information_floating-badge">Recomendado</div>
+              <article>
+                <div class="section-information_text">
+                  <h3>Pago Anual</h3>
+                  <p class="section-information_price"><span>$</span>199</p>
+                  <p>*Ahorras $129 comparado al plan mensual.</p>
+                  <button>Escoger este <span></span></button>
+                </div>
+              </article>
+            </div>
 
-    <footer>foot</footer>
-  </body>
-</html>
+            <div class="information_target">
+              <article>
+                <div class="section-information_text">
+                  <h3>Pago Anual</h3>
+                  <p class="section-information_price"><span>$</span>500</p>
+                  <p>*Ahorras $129 comparado al plan mensual.</p>
+                  <button>Escoger este <span></span></button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer_container">
+        <div>
+          <p>Red face</p>
+          <p>Red X</p>
+          <p>Red Lin</p>
+        </div>
+        <div class="footer_container_icon">
+          <img src="/assets/img/Group 18.svg">
+        </div>
+      </footer>
+
+    </body>
+  </html>
