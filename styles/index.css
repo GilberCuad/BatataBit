@@ -156,7 +156,7 @@ main {
 
 .section-exchange_container p {
   line-height: 1.8rem;
-  color: var(--grey_text);
+  color: var(--black);
   font-size: 1.4rem;
   margin-bottom: 40px;
 }
@@ -298,7 +298,7 @@ main {
 }
 
 .section-create_instruction p {
-  color: var(--grey_text);
+  color: var(--just_white);
   font-weight: var(--fonts_md);
   font-size: 1.4rem;
 }
@@ -333,7 +333,7 @@ main {
 
 .section-create_card p {
   font-weight: var(--fonts_md);
-  color: var(--grey_text);
+  color: var(--just_white);
   font-size: 1.4rem;
 }
 
@@ -382,7 +382,7 @@ main {
 .section-information_container article>p {
   font-size: 1.4rem;
   font-weight: var(--fonts_md);
-  color: var(--grey_text);
+  color: var(--just_white);
   line-height: 1.8rem;
 }
 
@@ -469,7 +469,7 @@ main {
 
 .section-information_text p:nth-last-child(2) {
   margin-bottom: 15px;
-  color: var(--grey_text);
+  color: var(--just_white);
   font-weight: 500;
   font-size: 1.2rem;
 }
