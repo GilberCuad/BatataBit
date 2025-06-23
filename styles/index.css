@@ -117,10 +117,12 @@ main {
 
 .section-exchange_container {
   width: 100%;
+  padding: 20px;
   height: auto;
   padding-top: 80px;
   padding-bottom: 30px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .section-exchange_textContent {
@@ -145,6 +147,13 @@ main {
   margin-bottom: 20px;
 }
 
+.section-exchange_table_wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box
+}
+
 .section-exchange_container p {
   line-height: 1.8rem;
   color: var(--grey_text);
@@ -152,22 +161,51 @@ main {
   margin-bottom: 40px;
 }
 
+.section-exchange_scroll_main {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.section-exchange_scroll_main::-webkit-scrollbar {
+  display: none;
+}
+
+
+.section-exchange_tableMoney,
+.section-exchange_commission {
+  flex: 0 0 100%;
+  max-width: 100vw;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
 .section-exchange_table {
-  font-family: "Inter", sans-serif;
-  font-size: 1.6rem;
-  line-height: 100%;
-  font-weight: var(--fonts_md);
-  color: #B5B0AC;
   display: grid;
   grid-template-columns: repeat(2, 95px);
   grid-template-rows: repeat(4, 39px);
   width: 200px;
-  margin: 0 auto;
+  gap: 10px;
   border-radius: 10px;
   background: var(--just_white);
-  gap: 10px;
   box-shadow: 0px 6px 10px rgba(89, 73, 30, 0.16);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: var(--fonts_md);
+  color: #B5B0AC;
+  margin-bottom: 1rem;
 }
+
+
 
 .tablecell {
   border-top: 8px;
